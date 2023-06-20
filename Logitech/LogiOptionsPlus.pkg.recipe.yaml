@@ -33,7 +33,7 @@ Process:
 
         # Check exit code and bail if the package didn't install correctly
         if [[ -e "/private/tmp/logioptionsplus.app" ]]; then
-            if ! "/private/tmp/logioptionsplus.app/Contents/MacOS/logioptionsplus_installer" --quiet –log /private/tmp --analytics No --flow No --sso No; then
+            if ! "/private/tmp/logioptionsplus.app/Contents/MacOS/logioptionsplus_installer" --quiet --analytics No --flow No --sso No; then
                 echo "Issues occurred during the installation of Logi Options+. Please check the install log and try again."
                 exit 1
             fi
